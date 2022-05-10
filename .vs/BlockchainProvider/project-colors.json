@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "26000cf0-aec4-4e5e-8bb6-4856a58e27dd": {
+      "ProjectGuid": "26000cf0-aec4-4e5e-8bb6-4856a58e27dd",
+      "DisplayName": "BlockchainProvider",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
