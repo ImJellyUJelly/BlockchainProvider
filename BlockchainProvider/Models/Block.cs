@@ -9,12 +9,14 @@ namespace BlockchainProvider.Models
         public string Hash { get; }
         public string PreviousHash { get; }
         public DateTime Created { get; }
+        public BlockData Data { get; }
 
-        public Block(int number, string previousHash, DateTime created)
+        public Block(int number, string previousHash, DateTime created, BlockData data)
         {
             Number = number;
             Created = created;
             PreviousHash = previousHash;
+            Data = data;
             Hash = CalculateHash();
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QwwTMsqJlFL5FShRWTye5BwhFfNi/jDSLHoD99AKkQ66iVD03DJq1jLgMLr4e6Wvs5mT9rm8kvuFtjV795MpOg==",
+  "dgSpecHash": "2PMLnAhLHLJIrb4DxMsBz2E8sXAIz0pZeJLdUhB5inWVf25SkTnBKviFGYY+pCfAUxwHyPuaDB8/g0hzzATcng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
+  "projectFilePath": "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
