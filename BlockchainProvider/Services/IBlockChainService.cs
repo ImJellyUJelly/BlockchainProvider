@@ -17,9 +17,9 @@ namespace BlockchainProvider.Services
         /// </summary>
         /// <returns>The Block that was made.</returns>
         /// <param name="className">The class of which the Transaction is about.</param>
+        /// <param name="lastBlockHash">The hash of the last Block in the Chain.</param>
         /// <param name="transactionType">The type of Transaction. (Add, Edit, Remove)</param>
-        /// <param name="jsonData">The data in JSON format.</param>
-        Block CreateBlock(string className, TransactionType transactionType, string jsonData);
+        Block CreateBlock(string className, string lastBlockHash, TransactionType transactionType);
         /// <summary>
         /// Create a genesis Block. The first Block in the chain that doesn't require data or a previous hash.
         /// </summary>

@@ -5,10 +5,12 @@ namespace BlockchainProvider.Services
 {
     public class BlockChainService : IBlockChainService
     {
+        private readonly ITransactionService _transactionService;
         public ObservableCollection<Block> Chain { get; private set; }
 
-        public BlockChainService()
+        public BlockChainService(ITransactionService transactionService)
         {
+            _transactionService = transactionService;
             Chain = new ObservableCollection<Block>();
         }
 
@@ -17,14 +19,13 @@ namespace BlockchainProvider.Services
             Chain.Add(block);
         }
 
-        public Block CreateBlock(string className, TransactionType transactionType, string jsonData)
+        public Block CreateBlock(string className, string lastBlockHash, TransactionType transactionType)
         {
-            int blockNumber = Chain.Count - 1;
-            string lastBlockHash = Chain.Last().Hash;
-            BlockData data = new BlockData(className, transactionType, jsonData);
+            int blockNumber = Chain.Count + 1;
+            string previousBlockHash = lastBlockHash;
+            var transactions = ConvertToArray(_transactionService.Transactions);
 
-            var block = new Block(blockNumber, lastBlockHash, DateTime.Now, data);
-            AddBlock(block);
+            var block = new Block(blockNumber, previousBlockHash, DateTime.Now, transactions);
             return block;
         }
 
@@ -32,16 +33,36 @@ namespace BlockchainProvider.Services
         {
             int blockNumber = 0;
             string lastBlockHash = "";
-            BlockData data = new BlockData(string.Empty, TransactionType.ADD, string.Empty);
-
-            var block = new Block(blockNumber, lastBlockHash, DateTime.Now, data);
+            var transactions = ConvertToArray(new Collection<Transaction>());
+            var block = new Block(blockNumber, lastBlockHash, DateTime.Now, transactions);
             AddBlock(block);
             return block;
         }
 
         public bool ValidateChain(List<Block> chain)
         {
-            throw new NotImplementedException();
+            foreach(var block in chain)
+            {
+                foreach(var otherBlock in Chain)
+                {
+                    if(block.Hash != otherBlock.Hash)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        private Transaction[] ConvertToArray(Collection<Transaction> transactions)
+        {
+            Transaction[] transactionArray = new Transaction[transactions.Count];
+            for(int i = 0; i < transactions.Count; i++)
+            {
+                transactionArray[i] = transactions[i];
+            }
+
+            return transactionArray;
         }
     }
 }

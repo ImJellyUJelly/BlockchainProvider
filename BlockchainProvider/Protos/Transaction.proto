@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcTransaction";
+
+service Transaction {
+  rpc GetTransaction () returns (GetTransAction);
+}
+
+message GetTransAction {
+  required int something = 1;
+  required string name = 2;
+}

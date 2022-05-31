@@ -1,0 +1,12 @@
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\bin\Debug\net6.0\BlockchainProvider.deps.json
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\bin\Debug\net6.0\BlockchainProvider.dll
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\bin\Debug\net6.0\ref\BlockchainProvider.dll
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\bin\Debug\net6.0\BlockchainProvider.pdb
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.csproj.AssemblyReference.cache
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.AssemblyInfoInputs.cache
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.AssemblyInfo.cs
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.csproj.CoreCompileInputs.cache
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.dll
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\ref\BlockchainProvider.dll
+C:\Users\Jelle Schrader\Documents\Github\BlockchainProvider\BlockchainProvider\obj\Debug\net6.0\BlockchainProvider.pdb

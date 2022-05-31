@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "2PMLnAhLHLJIrb4DxMsBz2E8sXAIz0pZeJLdUhB5inWVf25SkTnBKviFGYY+pCfAUxwHyPuaDB8/g0hzzATcng==",
+  "dgSpecHash": "Eap5lUjNKdA8JZLGUUPnyb3dacKK+fXkCTQdCfxD0DJlzg+wCxlmSPvTa7Ib6ENGPNy6hgggBjwIklk757BrGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jelle Schrader\\.nuget\\packages\\google.protobuf\\3.20.1\\google.protobuf.3.20.1.nupkg.sha512",
+    "C:\\Users\\Jelle Schrader\\.nuget\\packages\\grpc.core\\2.46.1\\grpc.core.2.46.1.nupkg.sha512",
+    "C:\\Users\\Jelle Schrader\\.nuget\\packages\\grpc.core.api\\2.46.1\\grpc.core.api.2.46.1.nupkg.sha512",
+    "C:\\Users\\Jelle Schrader\\.nuget\\packages\\grpc.tools\\2.46.1\\grpc.tools.2.46.1.nupkg.sha512",
+    "C:\\Users\\Jelle Schrader\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

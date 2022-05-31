@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj": {}
+    "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj": {
+    "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
+        "projectUniqueName": "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
         "projectName": "BlockchainProvider",
-        "projectPath": "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
-        "packagesPath": "C:\\Users\\jschrader\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jschrader\\Documents\\Projects\\BlockchainProvider\\BlockchainProvider\\obj\\",
+        "projectPath": "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\BlockchainProvider.csproj",
+        "packagesPath": "C:\\Users\\Jelle Schrader\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jelle Schrader\\Documents\\Github\\BlockchainProvider\\BlockchainProvider\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jschrader\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jelle Schrader\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.20.1, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.1, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.46.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

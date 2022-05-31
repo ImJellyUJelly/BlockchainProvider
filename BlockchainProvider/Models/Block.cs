@@ -8,13 +8,13 @@ namespace BlockchainProvider.Models
         public int Number { get; }
         public string Hash { get; }
         public string PreviousHash { get; }
-        public DateTime Created { get; }
-        public BlockData Data { get; }
+        public DateTime CreatedTime { get; }
+        public Transaction[] Data { get; }
 
-        public Block(int number, string previousHash, DateTime created, BlockData data)
+        public Block(int number, string previousHash, DateTime created, Transaction[] data)
         {
             Number = number;
-            Created = created;
+            CreatedTime = created;
             PreviousHash = previousHash;
             Data = data;
             Hash = CalculateHash();
@@ -22,7 +22,7 @@ namespace BlockchainProvider.Models
 
         public string CalculateHash()
         {
-            string data = Number + PreviousHash + Created;
+            string data = Number + PreviousHash + CreatedTime + Data;
             string generatedHash = "";
             using(SHA256 algorithm = SHA256.Create())
             {
